@@ -58,3 +58,9 @@ class WordChainer
     path.reverse
   end
 end
+
+
+if $PROGRAM_NAME == __FILE__
+  p WordChainer.new(ARGV.shift).run('duck', 'ruby')
+end
+
